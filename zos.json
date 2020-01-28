@@ -1,0 +1,8 @@
+{
+  "zosversion": "2.2",
+  "name": "GoodsChain",
+  "version": "0.2.0",
+  "contracts": {
+    "GoodsChain": "GoodsChainV2"
+  }
+}

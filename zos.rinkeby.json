@@ -1,0 +1,119 @@
+{
+  "contracts": {
+    "GoodsChain": {
+      "address": "0x32e0f1378938acCdb942bd390D261E8a1c174ba4",
+      "constructorCode": "608060405234801561001057600080fd5b50610afb806100206000396000f3fe",
+      "bodyBytecodeHash": "703aca0987399ad976f4d3053bfdc12bd7f33909887e4a27ba47545f3fcde3a1",
+      "localBytecodeHash": "dbe6fafd718e0d03fad4ada9126092a96252ff79d12f123ebbb1921d516ce1d1",
+      "deployedBytecodeHash": "dbe6fafd718e0d03fad4ada9126092a96252ff79d12f123ebbb1921d516ce1d1",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_array:dyn<t_string>": {
+          "id": "t_array:dyn<t_string>",
+          "valueType": "t_string",
+          "length": "dyn",
+          "kind": "array",
+          "label": "string[]"
+        },
+        "t_mapping<t_array:dyn<t_string>>": {
+          "id": "t_mapping<t_array:dyn<t_string>>",
+          "valueType": "t_array:dyn<t_string>",
+          "label": "mapping(key => string[])",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 145,
+          "type": "t_bool",
+          "src": "757:24:2"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 147,
+          "type": "t_bool",
+          "src": "876:25:2"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 196,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:2"
+        },
+        {
+          "contract": "GoodsChain",
+          "path": "contracts/GoodsChain.sol",
+          "label": "chainManager",
+          "astId": 6,
+          "type": "t_address",
+          "src": "158:27:0"
+        },
+        {
+          "contract": "GoodsChain",
+          "path": "contracts/GoodsChain.sol",
+          "label": "ChainData",
+          "astId": 29,
+          "type": "t_mapping<t_array:dyn<t_string>>",
+          "src": "435:59:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "GoodsChain/GoodsChain": [
+      {
+        "address": "0x80c31d851697B2D97630e0c60fd0AC03F3810A08",
+        "version": "0.2.0",
+        "implementation": "0x32e0f1378938acCdb942bd390D261E8a1c174ba4"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "0.2.0",
+  "proxyAdmin": {
+    "address": "0x141E9e40401A8B0Bc4a2F458Bb5f861535B35e90"
+  }
+}

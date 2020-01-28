@@ -1,0 +1,17 @@
+{
+  "name": "goodschain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "sudo rm -fr node_modules/ build/ zos.rinkeby.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "truffle": "^5.0.14",
+    "truffle-hdwallet-provider": "^1.0.8",
+    "zos-lib": "^2.2.3"
+  }
+}
